@@ -1,5 +1,32 @@
+/* sora-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Sora/sora-v17-latin-regular.woff2') format('woff2');
+}
+
+/* sora-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/Sora/sora-v17-latin-600.woff2') format('woff2');
+}
+
+/* sora-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Sora/sora-v17-latin-700.woff2') format('woff2');
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Sora', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
