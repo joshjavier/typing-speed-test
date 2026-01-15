@@ -7,6 +7,5 @@
 @import url('./styles/utilities.css');
 
 /* Components */
-@import url('./styles/components/button.css');
 @import url('./styles/components/passage.css');
 @import url('./styles/components/stats.css');

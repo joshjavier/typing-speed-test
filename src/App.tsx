@@ -1,3 +1,5 @@
+import { Button } from './components';
+
 function App() {
   return (
     <>
@@ -16,7 +18,7 @@ function App() {
       <p>Timed (60s)</p>
       <p>Passage</p>
 
-      <p>Start Typing Test</p>
+      <Button>Start Typing Test</Button>
       <p>Or click the text and start typing</p>
 
       <p>Test Complete!</p>

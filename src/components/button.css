@@ -1,0 +1,106 @@
+/* Button Component */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-125);
+  padding: var(--spacing-200) var(--spacing-300);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-tight-md);
+  font-weight: var(--font-weight-semibold);
+  border: none;
+  border-radius: var(--radius-12);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-primary-light);
+  outline-offset: 3px;
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* Button Variants */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-neutral-0);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--color-primary-light);
+}
+
+.btn-primary:active:not(:disabled) {
+  background-color: var(--color-primary);
+}
+
+.btn-secondary {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: var(--color-neutral-400);
+  border-color: var(--color-text);
+  opacity: 0.9;
+}
+
+.btn-secondary:active:not(:disabled) {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-surface);
+  border: 1px solid var(--color-neutral-500);
+}
+
+.btn-outline:hover:not(:disabled) {
+  border-color: var(--color-primary-light);
+  color: var(--color-primary-light);
+}
+
+.btn-outline:active:not(:disabled) {
+  border-color: var(--color-primary-light);
+  color: var(--color-primary-light);
+}
+
+/* Button Sizes */
+.btn-sm {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+}
+
+.btn-lg {
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-lg);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Button Icons */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon-left,
+.btn-icon-right {
+  width: 1em;
+  height: 1em;
+}
